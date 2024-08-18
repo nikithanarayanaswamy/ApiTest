@@ -20,6 +20,7 @@ public class JsonNodeUtils {
         return objectMapper.readTree(jsonString);
     }
 
+
     // takes jsonnode, maps it to a class
     public static <T> T jsonNodeToClass (JsonNode jsonNode, Class<T> tClass) throws JsonProcessingException {
         return objectMapper.treeToValue(jsonNode, tClass);
